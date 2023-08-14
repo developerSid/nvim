@@ -17,17 +17,10 @@ return require('packer').startup(function(use)
 	  'nvim-telescope/telescope.nvim', tag = '0.1.2',
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
-  use {
-	  'nordtheme/vim',
-	  as = 'nord',
-	  config = function()
-	    vim.cmd('colorscheme nord')
-	  end
-  }
-
   use (	'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use ( 'nvim-treesitter/playground' )
   use ( 'mbbill/undotree' )
+  use ( 'shaunsingh/nord.nvim' )
   use {
 	  'VonHeikemen/lsp-zero.nvim',
 	  branch = 'v2.x',
