@@ -14,30 +14,30 @@ local packer_bootstrap = ensure_packer()
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
   use {
-	  'nvim-telescope/telescope.nvim', tag = '0.1.2',
-	  requires = { {'nvim-lua/plenary.nvim'} }
+    'nvim-telescope/telescope.nvim', tag = '0.1.2',
+    requires = { {'nvim-lua/plenary.nvim'} }
   }
   use (	'nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
   use ( 'nvim-treesitter/playground' )
   use ( 'mbbill/undotree' )
   use ( 'shaunsingh/nord.nvim' )
   use {
-	  'VonHeikemen/lsp-zero.nvim',
-	  branch = 'v2.x',
-	  requires = {
-		  -- LSP Support
-		  {'neovim/nvim-lspconfig'},             -- Required
-		  {'williamboman/mason.nvim'},           -- Optional
-		  {'williamboman/mason-lspconfig.nvim'}, -- Optional
+    'VonHeikemen/lsp-zero.nvim',
+    branch = 'v2.x',
+    requires = {
+      -- LSP Support
+      {'neovim/nvim-lspconfig'},             -- Required
+      {'williamboman/mason.nvim'},           -- Optional
+      {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
-		  -- Autocompletion
-		  {'hrsh7th/nvim-cmp'},     -- Required
-		  {'hrsh7th/cmp-nvim-lsp'}, -- Required
-		  {'L3MON4D3/LuaSnip'},     -- Required
-	  }
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},     -- Required
+      {'hrsh7th/cmp-nvim-lsp'}, -- Required
+      {'L3MON4D3/LuaSnip'},     -- Required
+    }
   }
   use("editorconfig/editorconfig-vim")
-	use("tpope/vim-fugitive")
+  use("tpope/vim-fugitive")
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then
