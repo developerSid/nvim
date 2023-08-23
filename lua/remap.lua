@@ -1,7 +1,7 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.keymap.set("n", "<leader>fe", vim.cmd.Ex, { desc = '[F]ile [E]xplorer' })
+vim.keymap.set("n", "<leader>ef", vim.cmd.Ex, { desc = '[E]xplorer of [F]iles' })
 
 -- move VISUAL selected lines
 vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = 'Move line[s] up'}) -- move VISUAL selected line up

@@ -123,4 +123,5 @@ return {
     },
     build = ':TSUpdate',
   },
+  'ionide/Ionide-vim'
 }
