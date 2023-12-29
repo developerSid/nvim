@@ -2,12 +2,17 @@
 -- See `:help nvim-treesitter`
 require('nvim-treesitter.configs').setup {
   -- Add languages to be installed here that you want installed for treesitter
-  ensure_installed = { 'c', 'lua', 'python', 'typescript', 'vimdoc', 'vim' },
+  ensure_installed = { 'lua' },
 
   -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
-  auto_install = false,
+  auto_install = true,
+
+  -- Install parsers synchronously (only applied to `ensure_installed`)
+  sync_install = false,
 
   highlight = { enable = true },
+  ignore_install = { },
+
   indent = { enable = true },
   incremental_selection = {
     enable = true,
@@ -18,6 +23,7 @@ require('nvim-treesitter.configs').setup {
       node_decremental = '<M-space>',
     },
   },
+  modules = {},
   textobjects = {
     select = {
       enable = true,
