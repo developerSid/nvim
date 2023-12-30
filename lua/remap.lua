@@ -25,8 +25,7 @@ vim.keymap.set('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open float
 vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' })
 
 -- Remap normal line delete to blackhole delete
-vim.api.nvim_set_keymap('n', 'dd', '"_dd', { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>dd', '"_dd', { noremap = true, silent = true, desc = 'Delete and blackhole current line' })
 
 -- Remap visual delete to blackhole the deleted content
-vim.api.nvim_set_keymap('v', 'd', '"_d', { noremap = true, silent = true })
-
+vim.keymap.set('v', '<leader>d', '"_d', { noremap = true, silent = true, desc = 'Delete and blackhole current selected text' })
