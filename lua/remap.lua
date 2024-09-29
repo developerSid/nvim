@@ -1,7 +1,8 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
-vim.keymap.set('n', '<leader>ef', vim.cmd.Ex, { desc = '[E]xplorer of [F]iles' })
+vim.keymap.set('n', '<leader>ef', ':Neotree toggle<CR>', { desc = '[E]xplorer of [F]iles' })
+--vim.keymap.set('n', '<leader>ef', vim.cmd.Ex, { desc = '[E]xplorer of [F]iles' })
 
 -- move VISUAL selected lines
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move line[s] up'}) -- move VISUAL selected line up
