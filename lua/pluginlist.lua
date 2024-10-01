@@ -124,21 +124,7 @@ return {
     build = ':TSUpdate',
   },
   'ionide/Ionide-vim',
-  {
-    'windwp/nvim-autopairs',
-    event = "InsertEnter",
-    opts = {} -- this is equalent to setup({}) function
-  },
+  require 'my.plugins.autopairs',
+  require 'my.plugins.neo-tree',
   'gleam-lang/gleam.vim',
-  {
-    "nvim-tree/nvim-tree.lua",
-    version = "*",
-    lazy = false,
-    dependencies = {
-      "nvim-tree/nvim-web-devicons",
-    },
-    config = function()
-      require("nvim-tree").setup {}
-    end,
-  }
 }
