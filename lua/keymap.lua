@@ -1,15 +1,3 @@
--- disable netrw at the very start of your init.lua
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
-
--- optionally enable 24-bit colour
-vim.opt.termguicolors = true
-
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-
---vim.keymap.set('n', '<leader>ef', vim.cmd.Ex, { desc = '[E]xplorer of [F]iles' })
-
 -- move VISUAL selected lines
 vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move line[s] up'}) -- move VISUAL selected line up
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv", { desc = 'Move line[s] down'}) -- move VISUAL selected line down
