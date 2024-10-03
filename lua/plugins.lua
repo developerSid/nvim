@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
+  -- add plugins bellow
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
 
