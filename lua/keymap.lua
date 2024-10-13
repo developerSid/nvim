@@ -28,6 +28,3 @@ vim.keymap.set(
 	'"_d',
 	{ noremap = true, silent = true, desc = "Delete and blackhole current selected text" }
 )
-
-vim.api.nvim_set_keymap("n", "<S-l>", ":BufferLineCycleNext<CR>", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "<S-h>", ":BufferLineCyclePrev<CR>", { noremap = true, silent = true })
