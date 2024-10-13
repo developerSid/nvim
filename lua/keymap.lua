@@ -1,4 +1,4 @@
--- move VISUAL selected lines vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line[s] up" }) -- move VISUAL selected line up
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv", { desc = "Move line[s] up" }) -- move VISUAL selected line up
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move line[s] down" }) -- move VISUAL selected line down
 
 vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
